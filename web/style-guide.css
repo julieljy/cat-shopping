@@ -1,6 +1,3 @@
-/*body,h1,h2,h3,h4,h5,h6,p{*/
-    /*color: #594c3e;*/
-/*}*/
 
 /*按钮*/
 .cat-btn{
@@ -51,6 +48,9 @@
 /*缩略图*/
 #cat-thumbnail{
     width: 80%;
+}
+#cat-thumbnail img {
+    height: 250px;
 }
 
 /*标题*/
