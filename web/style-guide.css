@@ -1,0 +1,20 @@
+.cat-nav{
+    color: #594c3e;
+    border-bottom: 5px solid #594c3e;
+    height: 65px;
+}
+.cat-nav .active > a {
+    color: #ffffff;
+    background-color: #594c3e;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.cat-nav > li > a {
+    width: 90px;
+    font-size: 16px;
+    text-align: center;
+    color: #594c3e;
+    padding: 10px 17px;
+    margin-top: 10px;
+}

@@ -1,0 +1,75 @@
+body,h1,h2,h3,h4,h5,h6,p{
+    color: #594c3e;
+}
+
+.btn{
+    background-color: #594c3e;
+    color: #ffffff;
+}
+
+.btn:hover{
+    background-color: #473c31;
+    color: #ffffff;
+}
+
+.logo{
+    position: fixed;
+    margin-top: -50px;
+    left: 45%;
+    width: 180px;
+    height: 180px;
+    background: url("image/logo.png") -55px 15px;
+    background-size: 160%;
+    border-radius: 100%;
+    border-bottom: 5px solid #594c3e;
+}
+
+.navbar{
+    border-bottom: 5px solid #594c3e;
+    height: 65px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #594c3e;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    width: 90px;
+    font-size: 16px;
+    text-align: center;
+    color: #594c3e;
+    padding: 10px 17px;
+    margin-top: 10px;
+}
+
+.bkg1 {
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 200px;
+    height: 500px;
+    background: url("image/cat1.jpg") no-repeat;
+    background-size: 100% 120%;
+}
+
+.bkg1 > a {
+    position: relative;
+    top: 200px;
+}
+
+#favorites{
+    width: 80%;
+}
+
+.heading-title{
+    text-align: center;
+}
+
+.thumbnail img{
+    width: 200px;
+    height: 200px;
+}
