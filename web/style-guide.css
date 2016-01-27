@@ -1,20 +1,72 @@
-.cat-nav{
+/*body,h1,h2,h3,h4,h5,h6,p{*/
+    /*color: #594c3e;*/
+/*}*/
+
+/*按钮*/
+.cat-btn{
+    background-color: #594c3e;
+    color: #ffffff;
+}
+.cat-btn:hover{
+    background-color: #473c31;
+    color: #ffffff;
+}
+
+/*导航条*/
+#cat-nav{
     color: #594c3e;
     border-bottom: 5px solid #594c3e;
     height: 65px;
 }
-.cat-nav .active > a {
+
+#cat-nav .active > a {
     color: #ffffff;
     background-color: #594c3e;
     border-radius: 4px;
     height: 40px;
 }
 
-.cat-nav > li > a {
+#cat-nav li > a {
     width: 90px;
     font-size: 16px;
     text-align: center;
     color: #594c3e;
     padding: 10px 17px;
     margin-top: 10px;
+}
+
+#cat-nav li > a:hover{
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #594c3e;
+}
+
+/*巨幕*/
+#home-slider .image1 {
+    height: 500px;
+    background: url("image/cat1.jpg") no-repeat;
+    background-size: 100%;
+}
+
+/*缩略图*/
+#cat-thumbnail{
+    width: 80%;
+}
+
+/*标题*/
+.heading-title{
+    text-align: center;
+}
+
+/*关于我们*/
+#about-us{
+    width: 60%;
+}
+
+/*页尾*/
+#footer{
+    padding:5px;
+    color: #ffffff;
+    background-color: #594c3e;
+    text-align: center;
 }
