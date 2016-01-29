@@ -70,3 +70,49 @@
     background-color: #594c3e;
     text-align: center;
 }
+
+/*购物车表格*/
+
+/*th {*/
+    /*width: 80%;*/
+/*}*/
+
+#cart {
+    width: 80%;
+}
+/*#cart td {*/
+    /*height: 120px;*/
+    /*line-height: 120px;*/
+/*}*/
+#cart .cat-list, #cart .cat-receipt, #cart .cat-list-footer {
+    padding: 15px;
+    border: #DDDDDD 1px solid;
+}
+
+#cart th, #cart td {
+    text-align: center;
+}
+
+
+#cart img {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#cart span {
+    background-color: #594c3e;
+    border-color: #594c3e;
+    color: #ffffff;
+}
+#cart span:hover{
+    background-color: #473c31;
+    color: #ffffff;
+}
+#cart input {
+    width: 40px;
+}
+#cart .cat-pay {
+    margin-left: 110px;
+}
