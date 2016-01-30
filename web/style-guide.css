@@ -1,3 +1,6 @@
+body,h1,h2,h3,h4,h5,h6{
+    color: #594c3e;
+}
 
 /*按钮*/
 .cat-btn{
@@ -39,13 +42,53 @@
 }
 
 /*巨幕*/
+#home-slider {
+    position: relative;
+}
 #home-slider .image1 {
     height: 500px;
     background: url("image/cat1.jpg") no-repeat;
     background-size: 100%;
 }
+#home-slider .cat-btn-left, #home-slider .cat-btn-right {
+    position: absolute;
+    top:50%;
+    margin-top: -75px;
+    font-size: 36px;
+    border-radius: 4px;
+    border: 1px solid #594c3e;
+    color: #594c3e;
+    background-color: rgba(89, 76, 62, 0.3);
+}
+#home-slider .cat-btn-right {
+    right: 0px;
+}
+#home-slider .cat-btn-left button, #home-slider .cat-btn-right button {
+    color: #594c3e;
+    background-color: transparent;
+    height: 100px;
+}
+#home-slider .cat-btn-left:hover, #home-slider .cat-btn-right:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: #594c3e;
+}
+#home-slider .cat-slider {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 10px;
+}
+#home-slider .cat-slider ol {
+    padding: 0;
+}
+#home-slider .cat-slider li {
+    padding: 5px;
+    display: inline-block;
+    list-style-type: none;
+}
 
-/*缩略图*/
+    /*缩略图*/
 #cat-thumbnail{
     width: 80%;
 }
@@ -60,7 +103,32 @@
 
 /*关于我们*/
 #about-us{
+    width: 80%;
+    text-align: center;
+}
+#about-us .photos {
+    position: relative;
+    padding: 35px 0px;
+    margin: 0 auto;
     width: 60%;
+    background-color: #594c3e;
+}
+#about-us .photos:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    margin-left: -20px;
+    border: 15px solid #594c3e;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: transparent;
+}
+#about-us span {
+    left: -3px;
+    font-size: 50px;
+    color: #ffffff;
+    background-color: transparent;
 }
 
 /*页尾*/
@@ -69,6 +137,9 @@
     color: #ffffff;
     background-color: #594c3e;
     text-align: center;
+}
+#footer h3 {
+    color: #ffffff;
 }
 
 /*购物车表格*/
@@ -79,6 +150,12 @@
 
 #cart {
     width: 80%;
+}
+#cart caption span{
+    font-size: 38px;
+    color: #594c3e;
+    background-color: transparent;
+    border-color: transparent;
 }
 /*#cart td {*/
     /*height: 120px;*/
@@ -91,6 +168,7 @@
 
 #cart th, #cart td {
     text-align: center;
+    vertical-align:middle;
 }
 
 
@@ -106,7 +184,7 @@
     border-color: #594c3e;
     color: #ffffff;
 }
-#cart span:hover{
+#cart .add:hover, #cart .minus:hover{
     background-color: #473c31;
     color: #ffffff;
 }
