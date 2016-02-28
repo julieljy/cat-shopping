@@ -114,12 +114,15 @@ body,h1,h2,h3,h4,h5,h6{
 .heading-title{
     text-align: center;
 }
+.heading-title p {
+    font-size: 17px;
+}
 
 /*logo*/
 .logo{
     position: fixed;
     margin-top: -50px;
-    left: 45%;
+    left: 43.25%;
     width: 180px;
     height: 180px;
     background: url("image/logo.png") -55px 15px;
@@ -128,8 +131,8 @@ body,h1,h2,h3,h4,h5,h6{
     border-bottom: 5px solid #594c3e;
 }
 
-/*关于我们*/
-#about-us{
+/*关于我们&领养*/
+#about-us,#adopt-info{
     width: 80%;
     text-align: center;
 }
@@ -156,6 +159,35 @@ body,h1,h2,h3,h4,h5,h6{
     font-size: 50px;
     color: #ffffff;
     background-color: transparent;
+}
+#adopt-info .adopt-detail {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #594c3e;
+    border-radius: 4px;
+}
+#adopt-info .home-icon {
+    line-height: 200px;
+    font-size: 200px;
+    background-color: transparent;
+}
+#adopt-info .home-icon>span {
+    top: 10px;
+    left: -8px;
+}
+#adopt-info .adopt-photo {
+    position: absolute;
+    top: 95px;
+    left: 76px;
+}
+#adopt-info .adopt-photo>img {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #ffffff;
+    border-radius: 100%;
 }
 
 /*页尾*/
@@ -214,4 +246,9 @@ body,h1,h2,h3,h4,h5,h6{
 }
 #cart .cat-pay {
     margin-left: 110px;
+}
+
+/*空白*/
+#blank {
+    height:150px;
 }
