@@ -104,19 +104,19 @@ body,h1,h2,h3,h4,h5,h6{
     font-size: 17px;
 }
 
-/*关于我们&领养*/
-#about-us,#adopt-info{
+/*关于我们&领养&公益*/
+#about-us, #adopt-info, #charity-info{
     width: 80%;
     text-align: center;
 }
-#about-us .photos {
+#about-us .photos,#charity-info .photos {
     position: relative;
     padding: 35px 0px;
     margin: 0 auto;
     width: 60%;
     background-color: #594c3e;
 }
-#about-us .photos:after {
+#about-us .photos:after,#charity-info .photos:after {
     content: "";
     position: absolute;
     left: 50%;
@@ -127,13 +127,13 @@ body,h1,h2,h3,h4,h5,h6{
     border-left: 20px solid transparent;
     border-bottom: transparent;
 }
-#about-us span {
+#about-us span, #charity-info .photos span {
     left: -3px;
     font-size: 50px;
     color: #ffffff;
     background-color: transparent;
 }
-#adopt-info .adopt-detail {
+#adopt-info .adopt-detail, #charity-info .wrap-charity {
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -162,6 +162,49 @@ body,h1,h2,h3,h4,h5,h6{
     border: 5px solid #ffffff;
     border-radius: 100%;
 }
+#charity-info .wrap-step1, #charity-info .wrap-step2, #charity-info .wrap-step3 {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #594c3e;
+}
+#charity-info .wrap-step1 span{
+    font-size: 40px;
+}
+#charity-info .wrap-step1 p {
+    font-size: 20px;
+}
+#charity-info .wrap-step1 .wrap-info {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#charity-info .wrap-step1 .wrap-info:hover{
+    color: #ffffff;
+    background-color: #594c3e;
+    border-radius: 4px;
+}
+#charity-info .wrap-step2 span, #charity-info .wrap-step2 input{
+    border-color: #594c3e;
+}
+#charity-info .wrap-step2 span {
+    color: #594c3e;
+    background-color: #ffffff;
+}
+#charity-info .wrap-step2 .submit-button {
+    width: 20%;
+    margin-top: 10px;
+}
+/*页尾*/
+#footer{
+    padding:5px;
+    color: #ffffff;
+    background-color: #594c3e;
+    text-align: center;
+}
+#footer h3 {
+    color: #ffffff;
+}
+
 
 /*页尾*/
 #footer{
