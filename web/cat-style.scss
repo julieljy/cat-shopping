@@ -1,0 +1,301 @@
+$primaryColor: #594c3e #ffffff #473c31;
+
+/*页面*/
+body,h1,h2,h3,h4,h5,h6{
+  color: nth($primaryColor,1);
+}
+
+/*按钮*/
+.cat-btn {
+  background-color: nth($primaryColor,1);
+  color: nth($primaryColor,2);
+  &:hover {
+    background-color: nth($primaryColor,3);
+    color: nth($primaryColor,2);
+  }
+}
+
+/*导航条*/
+#cat-nav {
+  color: nth($primaryColor,1);
+  border-bottom: 5px solid nth($primaryColor,1);
+  height: 65px;
+  .active > a {
+    color: nth($primaryColor,2);
+    background-color: nth($primaryColor,1);
+    border-radius: 4px;
+    height: 40px;
+  }
+  li > a {
+    width: 90px;
+    font-size: 16px;
+    text-align: center;
+    color: nth($primaryColor,1);
+    padding: 10px 17px;
+    margin-top: 10px;
+
+    &:hover {
+      border-radius: 4px;
+      color: nth($primaryColor,2);
+      background-color: nth($primaryColor,1);
+    }
+
+  }
+}
+
+/*巨幕*/
+#home-slider {
+  position: relative;
+  .image1 {
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 200px;
+    height: 500px;
+    background: url("image/cat1.jpg") no-repeat;
+    background-size: 100% 120%;
+    border-bottom: 3px solid nth($primaryColor,1);
+    > a {
+      position: relative;
+      top: 200px;
+    }
+  }
+  .cat-btn-left {
+    position: absolute;
+    top:50%;
+    margin-top: -50px;
+    font-size: 36px;
+    border-radius: 4px;
+    border: 1px solid nth($primaryColor,1);
+    color: #594c3e;
+    background-color: rgba(89, 76, 62, 0.3);
+    button {
+      color: nth($primaryColor,1);
+      background-color: transparent;
+      height: 100px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: nth($primaryColor,1);
+    }
+  }
+  .cat-btn-right {
+    @extend .cat-btn-left;
+    right: 0px;
+  }
+  .cat-slider {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 10px;
+    ol {
+      padding: 0;
+      li {
+        padding: 5px;
+        display: inline-block;
+        list-style-type: none;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+/*缩略图*/
+#cat-thumbnail {
+  width: 80%;
+  text-align: center;
+  img {
+    height: 250px;
+  }
+  .details {
+    text-align: left;
+  }
+}
+
+/*标题*/
+.heading-title {
+  text-align: center;
+  p {
+    font-size: 17px;
+  }
+}
+
+/*logo*/
+.logo{
+  position: fixed;
+  margin-top: -50px;
+  left: 43.25%;
+  width: 180px;
+  height: 180px;
+  background: url("image/logo.png") -55px 15px;
+  background-size: 160%;
+  border-radius: 100%;
+  border-bottom: 5px solid nth($primaryColor,1);
+}
+
+/*空白*/
+#blank {
+  height:150px;
+}
+
+/*关于我们&领养&公益*/
+#about-us,#charity-info {
+  width: 80%;
+  text-align: center;
+  .photos {
+    position: relative;
+    padding: 35px 0px;
+    margin: 0 auto;
+    width: 60%;
+    background-color: nth($primaryColor, 1);
+    span {
+        left: -3px;
+        font-size: 50px;
+        color: nth($primaryColor, 2);
+        background-color: transparent;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -14px;
+      margin-left: -20px;
+      border: 15px solid nth($primaryColor, 1);
+      border-right: 20px solid transparent;
+      border-left: 20px solid transparent;
+      border-bottom: transparent;
+    }
+  }
+}
+#adopt-info .adopt-detail, #charity-info .wrap-charity {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid nth($primaryColor, 1);
+  border-radius: 4px;
+}
+#adopt-info {
+  width: 80%;
+  text-align: center;
+  .home-icon {
+    line-height: 200px;
+    font-size: 200px;
+    background-color: transparent;
+    span {
+      top: 10px;
+      left: -8px;
+    }
+  }
+  .adopt-photo {
+    position: absolute;
+    top: 95px;
+    left: 76px;
+    img {
+      width: 120px;
+      height: 120px;
+      border: 5px solid nth($primaryColor, 2);
+      border-radius: 100%;
+    }
+  }
+}
+#charity-info {
+  .wrap-step1,.wrap-step2,.wrap-step3 {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted nth($primaryColor, 1);
+  }
+  .wrap-step1 {
+    span {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+    .wrap-info {
+      padding-top: 20px;
+      padding-bottom: 10px;
+
+      &:hover {
+        color: nth($primaryColor, 2);
+        background-color: nth($primaryColor, 1);
+        border-radius: 4px;
+      }
+    }
+  }
+  .wrap-step2 {
+    span,input {
+      border-color: nth($primaryColor, 1);
+      color: nth($primaryColor, 1);
+      background-color: nth($primaryColor, 2);
+    }
+    .submit-button {
+      width: 20%;
+      margin-top: 10px;
+    }
+  }
+}
+
+/*购物车表格*/
+#cart {
+  margin: 150px auto 50px;
+  width: 80%;
+  caption {
+    span {
+      font-size: 38px;
+      color: nth($primaryColor, 1);
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+  .cat-list,.cat-receipt,.cat-list-footer {
+    padding: 15px;
+    border: #DDDDDD 1px solid;
+  }
+  th,td {
+    text-align: center;
+    vertical-align:middle;
+  }
+  img {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+  span {
+    background-color: nth($primaryColor, 1);
+    border-color: nth($primaryColor, 1);
+    color: nth($primaryColor, 2);
+  }
+  .add,.minu {
+    &:hover {
+      background-color: nth($primaryColor, 3);
+      color: nth($primaryColor, 2);
+    }
+  }
+  input {
+    width: 40px;
+  }
+  .cat-pay {
+    margin-left: 110px;
+  }
+}
+
+/*页尾*/
+#footer {
+  padding:5px;
+  background-color: nth($primaryColor, 1);
+  text-align: center;
+  h3,p {
+    color: nth($primaryColor, 2);
+  }
+}
+
+
