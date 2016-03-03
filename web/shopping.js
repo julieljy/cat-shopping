@@ -1,13 +1,12 @@
 /**
  * Created by julie on 3/3/16.
  */
-
-var Narbar = React.createclass({
-    render: function() {
+'use strict';
+var Narbar = React.createClass({
+    render:function(){
         return (
             <nav id="cat-nav" className="navbar navbar-default navbar-fixed-top">
                 <div className="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span className="sr-only">Toggle navigation</span>
@@ -17,8 +16,6 @@ var Narbar = React.createclass({
                         </button>
                         <a className="navbar-brand visible-xs" href="#">逗猫会</a>
                     </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav navbar-left">
                             <li className="active"><a href="shopping.html">首页</a></li>
@@ -33,15 +30,15 @@ var Narbar = React.createclass({
                             <li><a href="charity.html">公益</a></li>
                             <li><a href="cart.html">购物车</a></li>
                         </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
+                    </div>
+                </div>
             </nav>
         )
     }
 });
 
-var HomeSlider = React.createclass({
-    render: function() {
+var HomeSlider = React.createClass({
+    render:function(){
         return (
             <div id="home-slider">
                 <div className="jumbotron image1">
@@ -66,7 +63,7 @@ var HomeSlider = React.createclass({
     }
 });
 
-var HotCatThumbnail = React.createclass({
+var HotCatThumbnail = React.createClass({
     render:function(){
         return (
             <div id="cat-thumbnail" className="center-block">
@@ -126,7 +123,7 @@ var HotCatThumbnail = React.createclass({
     }
 });
 
-var AboutUs = React.createclass({
+var AboutUs = React.createClass({
     render:function(){
         return (
             <div id="about-us" className="center-block">
@@ -172,7 +169,7 @@ var AboutUs = React.createclass({
     }
 });
 
-var Footer = React.createclass({
+var Footer = React.createClass({
     render:function() {
         return (
             <div id="footer" className="center-block">
@@ -184,7 +181,7 @@ var Footer = React.createclass({
     }
 });
 
-var Shopping = React.createclass({
+var Shopping = React.createClass({
     render:function() {
         return(
             <div>
@@ -198,4 +195,4 @@ var Shopping = React.createclass({
     }
 });
 
-ReactDOM.render(<Shopping />,document.getElementsByTagName('BODY')[0]);
+ReactDOM.render(<Shopping />,document.getElementsByTagName("BODY")[0]);
